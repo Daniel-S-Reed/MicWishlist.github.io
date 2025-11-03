@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>MicWishList</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body
+    onload="loadItems()"
+    style="background-image: Url('birthday background.png')"
+  >
+    <script src="script.js"></script>
+    <center>
+      <div id="next" class="next">
+        <br />
+        <h1>Welcome to Micah's Wish list!</h1>
+        <p>Click on the buttons to filter the list.</p>
+        <div id="myBtnContainer">
+          <button
+            class="btn active buttonstyle"
+            onclick="filterSelection()"
+            id = "all"
+          >
+            All Items
+          </button>
+          <button class="btn buttonstyle" onclick="filterSelection()" id = "HarryPotter">
+            Harry Potter
+          </button>
+          <button class="btn buttonstyle" onclick="filterSelection()" id = "Puzzles">
+            Puzzles
+          </button>
+          <button class="btn buttonstyle" onclick="filterSelection()" id = "Fidget">
+            Fidgets
+          </button>
+          <button class="btn buttonstyle" onclick="filterSelection()" id = "Desk">
+            Desk
+          </button>
+          <button class="btn buttonstyle" onclick="filterSelection()" id = "Chair">
+            Chair
+          </button>
+          <button class="btn buttonstyle" onclick="filterSelection()" id = "Light">
+            Light
+          </button>
+          <button class="btn buttonstyle" onclick="filterSelection()" id = "Wood">
+            Wood
+          </button>
+          <button class="btn buttonstyle" onclick="filterSelection()" id = "Guitar">
+            Guitar
+          </button>
+          <button class="btn buttonstyle" onclick="filterSelection()" id = "MarbleRun">
+            Marble Run
+          </button>
+          <button class="btn buttonstyle" onclick="filterSelection()" id = "Books">
+            Books
+          </button>
+          <button class="btn buttonstyle" onclick="filterSelection()" id = "Models">
+            Models
+          </button>
+          <button class="btn buttonstyle" onclick="filterSelection()" id = "Shirt">
+            Shirts
+          </button>
+          <button class="btn buttonstyle" onclick="filterSelection()" id = "Other">
+            Other
+          </button>
+          <button class="btn buttonstyle" onclick="filterSelection()" id = "Fav">
+            Favorites
+          </button>
+          <br />
+          <button class="btn miniButton" onclick="filterSelection()" id = "1">
+            $10-$20
+          </button>
+          <button class="btn miniButton" onclick="filterSelection()" id = "2">
+            $20-$30
+          </button>
+          <button class="btn miniButton" onclick="filterSelection()" id = "3">
+            $30-$40
+          </button>
+          <button class="btn miniButton" onclick="filterSelection()" id = "4">
+            $40-$50
+          </button>
+          <button class="btn miniButton" onclick="filterSelection()" id = "5">
+            $50-$60
+          </button>
+          <button class="btn miniButton" onclick="filterSelection()" id = "6+">
+            $60+
+          </button>
+        </div>
+        <br />
+        <p>Select the organization method</p>
+        <p>
+          Alphabetical
+          <label class="switch">
+            <input type="checkbox" id="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          Numerical
+        </p>
+        <br />
+        <div class="container" id="container"></div>
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+      <br /><br />
+    </center>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  </body>
+</html>
