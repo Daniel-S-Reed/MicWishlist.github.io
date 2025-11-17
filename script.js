@@ -168,24 +168,24 @@ async function generateList() {
     if (wishList[x].c[1] == null) {
       ReturnHTML +=
         "<div class = 'filterDiv " +
-        wishList[x].c[4].v +
+        wishList[x].c[5].v +
         "'> <img src='" +
-        wishList[x].c[0].v +
+        wishList[x].c[1].v +
         "' class = 'hoverImage'></image><button class = 'filterButton'>" +
-        wishList[x].c[2].v +
+        wishList[x].c[3].v +
         "</button></div>";
     } else {
       ReturnHTML +=
         "<div class = 'filterDiv " +
-        wishList[x].c[4].v +
+        wishList[x].c[5].v +
         "'> <img src='" +
-        wishList[x].c[0].v +
-        "' class = 'hoverImage'></img><button class = 'filterButton' onclick = window.open('" +
         wishList[x].c[1].v +
-        "','_blank') >" +
+        "' class = 'hoverImage'></img><button class = 'filterButton' onclick = window.open('" +
         wishList[x].c[2].v +
-        "<br>" +
+        "','_blank') >" +
         wishList[x].c[3].v +
+        "<br>" +
+        wishList[x].c[4].v +
         "</button></div>";
     }
   }
@@ -203,7 +203,7 @@ window.onscroll = function () {
 function scrollFunction() {
   if (mybutton == null) {
     mybutton = document.getElementById("myBtn");
-    console.log(mybutton);
+    //console.log(mybutton);
   }
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
