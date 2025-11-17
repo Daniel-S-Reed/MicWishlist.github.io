@@ -149,6 +149,7 @@ async function generateList() {
   let resp = "";
   let res = await fetch(url);
   resp = await res.text();
+  console.log(resp.substring(47).slice(0, -2));
   wishList = await JSON.parse(resp.substring(47).slice(0, -2)).table.rows;
 
   console.log(document.getElementById("container").outerHTML == null);
