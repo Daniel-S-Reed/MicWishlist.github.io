@@ -164,6 +164,7 @@ async function generateList() {
   let ReturnHTML = "";
   for (let x = 0; x < wishList.length; x++) {
     console.log(wishList[x].c);
+    console.log("fixed");
     if (wishlist[x]).c[6].f){
     if (wishList[x].c[1] == null) {
       ReturnHTML +=
