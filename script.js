@@ -165,7 +165,7 @@ async function generateList() {
   for (let x = 0; x < wishList.length; x++) {
     console.log(wishList[x].c);
     console.log("fixed");
-    if (wishlist[x].c[6].v){
+    if (wishList[x].c[6].v){
     if (wishList[x].c[1] == null) {
       ReturnHTML +=
         "<div class = 'filterDiv " +
